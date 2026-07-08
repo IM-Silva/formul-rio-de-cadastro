@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Cadastro de Pets</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-
-<body>
-
-<div class="container">
-
-    <h2>Cadastro de Pets 🐶</h2>
-
-    <input type="number" id="matricula" placeholder="Matrícula">
-    <input type="text" id="nome" placeholder="Nome">
-    <input type="text" id="cor" placeholder="Cor">
-    <input type="number" id="peso" placeholder="Peso">
-    <input type="text" id="tamanho" placeholder="Tamanho">
-
-    <button onclick="cadastrarPet()">Cadastrar</button>
-
-    <div class="msg" id="msg"></div>
-
-</div>
-
-<script src="{{ url_for('static', filename='script.js') }}"></script>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Pets</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <h2>Cadastro de Pets 🐶</h2>
+                <input type="number" id="matricula" placeholder="Matrícula">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="cor" placeholder="Cor">
+                <input type="number" id="peso" placeholder="Peso">
+                <input type="text" id="tamanho" placeholder="Tamanho">
+                <button onclick="cadastrarPet()">Cadastrar</button>
+                <div class="msg" id="msg"></div>
+            </div>
+        </div>
+        <footer>&copy Desenvolvido por Iasmin Corrêa</footer>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>    </body>
 </html>
