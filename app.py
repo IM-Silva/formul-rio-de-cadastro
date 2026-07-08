@@ -45,4 +45,4 @@ def cadastro_pet():
     return {"status": "Pet salvo com sucesso!"}
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
